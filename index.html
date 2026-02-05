@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMAA</title>
+    <!--Fav Icon-->
+    <link rel="shortcut icon" href="assets/images/fav/fav.svg" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/images/fav/fav.svg">
+    <link rel="icon" type="image/x-icon" href="assets/images/fav/fav.svg">
+    <link rel="icon" href="assets/images/fav/fav.svg" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/fav/fav.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/fav/fav.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/fav/fav.png">
+    <link rel="mask-icon" href="assets/images/fav/fav.svg" color="#000000">
+    <!--Fontawesome Css-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--style_lenis  Animation Css-->
+    <link rel="stylesheet" href="assets/css/style_lenis.css">
+    <!--bulma-->
+    <link rel="stylesheet" href="assets/css/bulma-rtl.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!--Style Css-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--Responsive Css-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/gsap.min.js"></script>
+</head>
+
+<body dir="rtl" onload="move()" id="vertical">
+    <div id="preloader">
+        <div id="percent">1%</div>
+        <div id="bar">
+            <div id="barconfrm"></div>
+        </div>
+    </div>
+    <div class="header main-tool-bar">
+        <div class="container">
+            <div class="columns is-flex-wrap-wrap is-align-items-center is-mobile">
+                <div class="column is-5-fullhd is-5-desktop is-5-tablet is-5-mobile is-5 my-0">
+                    <div class="logo">
+                        <img src="assets/images/logo/logo.svg" alt="logo" />
+                    </div>
+                </div>
+                <div class="column is-7-fullhd is-7-desktop is-7-tablet is-7-mobile is-7 my-0">
+                    <ul class="is-flex is-align-items-center is-justify-content-end">
+                        <li>
+                            <button class="btn btn-outline">
+                                تواصل معنا
+                                <img src="assets/images/icon/contact-arrow.svg" />
+                            </button>
+                        </li>
+                        <li class="menue">
+                            <div class="container_nav" id="container_nav">
+                                <div class="bars">
+                                    <img src="assets/images/icon/menue.svg" alt="menu-icon">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="side-nav-market" data-lenis-prevent>
+        <img class="vector-menue-nav" src="assets/images/bg/vector-menue.svg" />
+        <div class="header-nav">
+            <div class="container is-fluid">
+                <div class="columns is-flex-wrap-wrap is-align-items-center is-mobile">
+                    <div class="column is-6-fullhd is-6-desktop is-6-tablet is-6-mobile is-6 my-0">
+                        <div class="collapsed_logo logo">
+                            <img src="assets/images/logo/logo-menu.svg" alt="logo" />
+                        </div>
+                    </div>
+                    <div class="column is-6-fullhd is-6-desktop is-6-tablet is-6-mobile is-6 my-0">
+                        <div class="close">
+                            <img src="assets/images/icon/close-menu.svg" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menue-linked-div">
+            <div class="container">
+                <div class="columns is-flex-wrap-wrap">
+                    <div class="column is-4-fullhd is-4-desktop is-5-tablet is-12-mobile is-4 ">
+                        <div class="menue-list">
+                            <ul class="first-menue-list">
+                                <li><a href="index.html">الرئيسية</a></li>
+                                <li><a href="fields.html">عن الشركة</a></li>
+                                <li><a href="family-samaa.html">عائلة سماء</a></li>
+                                <li><a href="news.html">آخر الأخبار</a></li>
+                                <li><a href="contact-us.html">تواصل معنا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column is-5-fullhd is-5-desktop is-6-tablet is-12-mobile is-4">
+                        <div class="list-two-part">
+                            <p>مجالات العمل</p>
+                            <ul>
+                                <li><a href="projects.html">التصميم الهندسي</a></li>
+                                <li><a href="projects.html">الأعمال المساحية</a></li>
+                                <li><a href="engineering_design.html">التصميم الداخلي</a></li>
+                                <li><a href="our-projects.html">أعمال السلامة</a></li>
+                                <li><a href="engineering_design.html">إدارة المشاريع</a></li>
+                                <li><a href="projects.html">التراخيص</a></li>
+                                <li><a href="projects.html">الإشراف</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column is-3-fullhd is-3-desktop is-4-tablet is-6-mobile is-4">
+                        <div class="list-menue">
+                            <p>مشاريعنا</p>
+                            <ul class="menue-link">
+                                <li><a href="projects.html">قطاع حكومي</a></li>
+                                <li><a href="projects.html"> قطاع خاص</a></li>
+                                <li><a href="projects.html">أفراد </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-flex-wrap-wrap">
+                    <div class="column is-6-fullhd is-6-desktop is-6-tablet is-12-mobile is-4 ">
+                        <div class="menue-list">
+                            <ul class="is-flex social-icon">
+                                <li><a href="#"><img src="assets/images/icon/linked.svg" alt="image" /></a></li>
+                                <li><a href="#"><img src="assets/images/icon/linked.svg" alt="image" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <main>
+        <div class="container_loading">
+
+            <div class="content-intro-section">
+                <div class="container ">
+                    <div class="columns is-flex-wrap-wrap is-align-items-center">
+                        <div class="column is-8-fullhd is-10-desktop is-12-tablet is-12-mobile">
+                            <h2>نجاح مرتبط بالقيمة التي نقدمها</h2>
+                            <p>نقدم حلولاً متطورة ومتعددة التخصصات، تتعاون كفاءاتنا لإضافة قيمة عبر دورة حياة المشروع.
+                            </p>
+                            <div class="button_section">
+                                <div class="columns is-flex-wrap-wrap is-align-items-center">
+                                    <div class="column is-4-fullhd is-4-desktop is-6-tablet is-12-mobile">
+                                        <button class="btn btn-primary">المزيد</button>
+                                    </div>
+                                    <div class="column is-4-fullhd is-4-desktop is-6-tablet is-12-mobile">
+                                        <button class="btn btn-secondary">عرض المشاريع</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------------------------------------slider project-------------------------------------------->
+        <div class="project-slider">
+            <div class="container container-fluid-slider is-fluid">
+                <div class="columns is-flex-wrap-wrap is-align-items-center">
+                    <div class="column is-12-fullhd is-12-desktop is-12-tablet is-12-mobile my-0 no-padding">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="columns is-flex-wrap-wrap is-align-items-center">
+                                        <div class="column is-6-fullhd is-6-desktop is-12-tablet is-12-mobile my-0 no-padding">
+                                            <div class="container">
+                                                <div class="columns is-flex-wrap-wrap is-align-items-center is-justify-content-center">
+                                                    <div class="column is-7-fullhd is-11-desktop is-12-tablet is-12-mobile">
+                                                        <div class="Description_Projects_part">
+                                                            <div class="card Description_Projects">
+                                                                <header class="card-header">
+                                                                    <span class="card-header-title">
+                                                                        التصميم الهندسي
+                                                                    </span>
+                                                                </header>
+                                                                <div class="card-content">
+                                                                    <div class="content">
+                                                                        <p>نقدم أعمال التصميم مُتعدد التخصصات لكافة أنواع المشاريع الحكومية
+                                                                            والخاصة</p>
+                                                                        <span>01</span>
+                                                                    </div>
+                                                                </div>
+                                                                <footer class="card-footer">
+                                                                    <p>نقوم بأعمال التخطيط الحضري و تقسـيم الأراضـي و تصميـم كافـة أنـواع
+                                                                        الطـــرق وفقـًا لمعاييــر الجــودة العالميــــة</p>
+                        
+                                                                </footer>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="column is-6-fullhd is-6-desktop is-12-tablet is-12-mobile my-0">
+                                            <div class="project-slider-image">
+                                                <img  class="width-project-slider" src="assets/images/projects/project-slider1.png"
+                                                            alt="">
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="columns is-flex-wrap-wrap is-align-items-center">
+                                        <div class="column is-6-fullhd is-6-desktop is-12-tablet is-12-mobile my-0 no-padding">
+                                            <div class="container">
+                                                <div class="columns is-flex-wrap-wrap is-align-items-center is-justify-content-center">
+                                                    <div class="column is-7-fullhd is-11-desktop is-12-tablet is-12-mobile">
+                                                        <div class="Description_Projects_part">
+                                                            <div class="card Description_Projects">
+                                                                <header class="card-header">
+                                                                    <span class="card-header-title">
+                                                                        التصميم الهندسي
+                                                                    </span>
+                                                                </header>
+                                                                <div class="card-content">
+                                                                    <div class="content">
+                                                                        <p>نقدم أعمال التصميم مُتعدد التخصصات لكافة أنواع المشاريع الحكومية
+                                                                            والخاصة</p>
+                                                                        <span>01</span>
+                                                                    </div>
+                                                                </div>
+                                                                <footer class="card-footer">
+                                                                    <p>نقوم بأعمال التخطيط الحضري و تقسـيم الأراضـي و تصميـم كافـة أنـواع
+                                                                        الطـــرق وفقـًا لمعاييــر الجــودة العالميــــة</p>
+                        
+                                                                </footer>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="column is-6-fullhd is-6-desktop is-12-tablet is-12-mobile my-0">
+                                            <div class="project-slider-image">
+                                                <img  class="width-project-slider" src="assets/images/projects/project-slider1.png"
+                                                 alt="">
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           <!-- <div class="margin-arrow">
+                                <div class="swiper-button-prev one"></div>
+                                <div class="swiper-button-next one"></div>
+                            </div>-->
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <!--------------------------------------------------Slider project-------------------------------------------->
+        <!--<div class="project-slider">
+            <div class="container container-fluid-slider is-fluid">
+                <div class="columns is-flex-wrap-wrap is-align-items-center">
+                    <div class="column is-6-fullhd is-6-desktop is-12-tablet is-12-mobile my-0 no-padding">
+                        <div class="container">
+                            <div class="columns is-flex-wrap-wrap is-align-items-center is-justify-content-center">
+                                <div class="column is-7-fullhd is-11-desktop is-12-tablet is-12-mobile">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="Description_Projects_part">
+                                                    <div class="card Description_Projects">
+                                                        <header class="card-header">
+                                                            <span class="card-header-title">
+                                                                التصميم الهندسي
+                                                            </span>
+                                                        </header>
+                                                        <div class="card-content">
+                                                            <div class="content">
+                                                                <p>نقدم أعمال التصميم مُتعدد التخصصات لكافة أنواع
+                                                                    المشاريع الحكومية والخاصة</p>
+                                                                <span>01</span>
+                                                            </div>
+                                                        </div>
+                                                        <footer class="card-footer">
+                                                            <p>نقوم بأعمال التخطيط الحضري و تقسـيم الأراضـي و تصميـم
+                                                                كافـة أنـواع الطـــرق وفقـًا لمعاييــر الجــودة
+                                                                العالميــــة</p>
+
+                                                        </footer>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="Description_Projects_part">
+                                                    <div class="card Description_Projects">
+                                                        <header class="card-header">
+                                                            <span class="card-header-title">
+                                                                التصميم الهندسي
+                                                            </span>
+                                                        </header>
+                                                        <div class="card-content">
+                                                            <div class="content">
+                                                                <p>نقدم أعمال التصميم مُتعدد التخصصات لكافة أنواع
+                                                                    المشاريع الحكومية والخاصة</p>
+                                                                <span>01</span>
+                                                            </div>
+                                                        </div>
+                                                        <footer class="card-footer">
+                                                            <p>نقوم بأعمال التخطيط الحضري و تقسـيم الأراضـي و تصميـم
+                                                                كافـة أنـواع الطـــرق وفقـًا لمعاييــر الجــودة
+                                                                العالميــــة</p>
+
+                                                        </footer>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="Description_Projects_part">
+                                                    <div class="card Description_Projects">
+                                                        <header class="card-header">
+                                                            <span class="card-header-title">
+                                                                التصميم الهندسي
+                                                            </span>
+                                                        </header>
+                                                        <div class="card-content">
+                                                            <div class="content">
+                                                                <p>نقدم أعمال التصميم مُتعدد التخصصات لكافة أنواع
+                                                                    المشاريع الحكومية والخاصة</p>
+                                                                <span>01</span>
+                                                            </div>
+                                                        </div>
+                                                        <footer class="card-footer">
+                                                            <p>نقوم بأعمال التخطيط الحضري و تقسـيم الأراضـي و تصميـم
+                                                                كافـة أنـواع الطـــرق وفقـًا لمعاييــر الجــودة
+                                                                العالميــــة</p>
+
+                                                        </footer>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="Description_Projects_part">
+                                                    <div class="card Description_Projects">
+                                                        <header class="card-header">
+                                                            <span class="card-header-title">
+                                                                التصميم الهندسي
+                                                            </span>
+                                                        </header>
+                                                        <div class="card-content">
+                                                            <div class="content">
+                                                                <p>نقدم أعمال التصميم مُتعدد التخصصات لكافة أنواع
+                                                                    المشاريع الحكومية والخاصة</p>
+                                                                <span>01</span>
+                                                            </div>
+                                                        </div>
+                                                        <footer class="card-footer">
+                                                            <p>نقوم بأعمال التخطيط الحضري و تقسـيم الأراضـي و تصميـم
+                                                                كافـة أنـواع الطـــرق وفقـًا لمعاييــر الجــودة
+                                                                العالميــــة</p>
+
+                                                        </footer>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="Description_Projects_part">
+                                                    <div class="card Description_Projects">
+                                                        <header class="card-header">
+                                                            <span class="card-header-title">
+                                                                التصميم الهندسي
+                                                            </span>
+                                                        </header>
+                                                        <div class="card-content">
+                                                            <div class="content">
+                                                                <p>نقدم أعمال التصميم مُتعدد التخصصات لكافة أنواع
+                                                                    المشاريع الحكومية والخاصة</p>
+                                                                <span>01</span>
+                                                            </div>
+                                                        </div>
+                                                        <footer class="card-footer">
+                                                            <p>نقوم بأعمال التخطيط الحضري و تقسـيم الأراضـي و تصميـم
+                                                                كافـة أنـواع الطـــرق وفقـًا لمعاييــر الجــودة
+                                                                العالميــــة</p>
+
+                                                        </footer>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="margin-arrow">
+                                            <div class="swiper-button-prev one"></div>
+                                            <div class="swiper-button-next one"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="column is-6-fullhd is-6-desktop is-12-tablet is-12-mobile my-0">
+                        <div class="project-slider-image">
+                            <div class='container_sec'>
+                                <div class='reveal'>
+                                    <img class="width-project-slider" src="assets/images/projects/project-slider1.png"
+                                        alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>-->
+        <!--------------------------------------------------Our Projects-------------------------------------------->
+        <div class="our_project_slider">
+            <div class="container  is-fluid">
+                <div class="title-section">
+                    <p>مشاريعنا</p>
+                </div>
+            </div>
+            <div class="container container-fluid-slider is-fluid">
+                <div class="columns is-flex-wrap-wrap is-align-items-center">
+                    <div class="column is-3-fullhd is-4-desktop is-5-tablet is-12-mobile my-0">
+                        <div class="columns is-justify-content-center">
+                            <div class="column is-9-fullhd is-11-desktop is-12-tablet is-12-mobile no-padding">
+                                <div class="card">
+                                    <header class="card-header">
+                                        <span class="card-header-title">الإشراف على المشاريع بوزارة التعليم الدفعة
+                                            الثامنة المجموعة السادسة</span>
+                                    </header>
+                                    <div class="card-content">
+                                        <span class="category">التصنيف</span>
+                                        <p>جهات حكومية</p>
+                                        <div class="image_number is-flex">
+                                            <span class="image">الصور</span>
+                                            <div class="swiper-pagination one"></div>
+                                        </div>
+                                        <!-- Pagination -->
+
+                                        <div class="swiper-button-next two"></div>
+                                        <div class="swiper-button-prev two"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-9-fullhd is-8-desktop is-7-tablet is-12-mobile my-0">
+                        <div class="swiper-container first_number_slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src='assets/images/projects/project-slider1.png'>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src='assets/images/projects/slider2.png'>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src='assets/images/projects/project-slider1.png'>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src='assets/images/projects/slider2.png'>
+                                </div>
+                            </div>
+
+
+                            <!-- Arrows -->
+
+                        </div>
+                    </div>
+                </div>
+                <!----------------------------->
+                <div class="columns is-flex-wrap-wrap is-align-items-center">
+                    <div class="column is-3-fullhd is-4-desktop is-5-tablet is-12-mobile my-0">
+                        <div class="columns is-justify-content-center">
+                            <div class="column is-9-fullhd is-11-desktop is-12-tablet is-12-mobile no-padding">
+                                <div class="card">
+                                    <header class="card-header">
+                                        <span class="card-header-title">الإشراف على المشاريع بوزارة التعليم الدفعة
+                                            الثامنة المجموعة السادسة</span>
+                                    </header>
+                                    <div class="card-content">
+                                        <span class="category">التصنيف</span>
+                                        <p>جهات حكومية</p>
+                                        <div class="image_number is-flex">
+                                            <span class="image">الصور</span>
+                                            <div class="swiper-pagination two"></div>
+                                        </div>
+
+                                        <!-- Pagination -->
+
+                                        <div class="swiper-button-next three"></div>
+                                        <div class="swiper-button-prev three"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-9-fullhd is-8-desktop is-7-tablet is-12-mobile my-0">
+                        <div class="swiper-container next-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src='assets/images/projects/slider3.png'>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src='assets/images/projects/slider4.png'>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src='assets/images/projects/slider3.png'>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src='assets/images/projects/slider4.png'>
+                                </div>
+                            </div>
+
+
+                            <!-- Arrows -->
+
+                        </div>
+                    </div>
+                </div>
+                <!---------------------------->
+                <div class="columns is-flex-wrap-wrap is-align-items-center">
+                    <div class="column is-3-fullhd is-4-desktop is-5-tablet is-12-mobile my-0">
+                        <div class="columns is-justify-content-center">
+                            <div class="column is-9-fullhd is-11-desktop is-12-tablet is-12-mobile no-padding">
+                                <div class="card">
+                                    <header class="card-header">
+                                        <span class="card-header-title">الإشراف على المشاريع بوزارة التعليم الدفعة
+                                            الثامنة المجموعة السادسة</span>
+                                    </header>
+                                    <div class="card-content">
+                                        <span class="category">التصنيف</span>
+                                        <p>جهات حكومية</p>
+                                        <!-- Pagination -->
+                                        <div class="image_number is-flex">
+                                            <span class="image">الصور</span>
+                                            <div class="swiper-pagination three"></div>
+                                        </div>
+                                        <div class="swiper-button-next four"></div>
+                                        <div class="swiper-button-prev four"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-9-fullhd is-8-desktop is-7-tablet is-12-mobile my-0">
+                        <div class="swiper-container third-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src='assets/images/projects/slider5.png'>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src='assets/images/projects/slider6.png'>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src='assets/images/projects/slider5.png'>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src='assets/images/projects/slider6.png'>
+                                </div>
+                            </div>
+                            <!-- Arrows -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------------------------Our Projects-------------------------------------------->
+        <!--      <div class='container_sec'>
+        <div class='reveal'>
+          <img src='https://images.unsplash.com/photo-1505201372024-aedc618d47c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80%20634w'>
+        </div>
+      </div>
+      <div class='container_sec'>
+        <div class='reveal'>
+          <img src='https://images.unsplash.com/photo-1531727991582-cfd25ce79613?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80%20634w'>
+        </div>
+      </div>
+      <div class='container_sec'>
+        <div class='reveal'>
+          <img src='https://images.unsplash.com/photo-1580215935060-a5adc57c5157?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80'>
+        </div>
+        <div class="credit"><a href="https://thisisadvantage.com" target="_blank">Made by Advantage</div>
+      </div>-->
+        <!--latest news-->
+        <div class="latest-news">
+            <div class="container is-fluid">
+                <div class="title">
+                    <p>آخر الأخبار</p>
+                </div>
+                <div class="columns is-flex-wrap-wrap is-align-items-center">
+                    <div class="column is-6-fullhd is-6-desktop is-6-tablet is-12-mobile">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class='container_sec'>
+                                    <div class='reveal'>
+                                        <img src='assets/images/news/news2.png' alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span>١٣ فبراير ٢٠٢٣</span>
+                                <p>الإشراف على المشاري بوزارة التعليم الدفعة الثامنة المجموعة السادسة</p>
+                                <a href="#" class="show-more-link">
+                                    اكتشف المزيد <img src="assets/images/icon/read-more.svg" alt="icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-6-fullhd is-6-desktop is-6-tablet is-12-mobile">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class='container_sec'>
+                                    <div class='reveal'>
+                                        <img src='assets/images/news/news1.png' alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span>١٣ فبراير ٢٠٢٣</span>
+                                <p>الإشراف على المشاريع بوزارة التعليم الدفعة الثامنة المجموعة السادسة</p>
+                                <a href="#" class="show-more-link">
+                                    اكتشف المزيد <img src="assets/images/icon/read-more.svg" alt="icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------Clients trusted us------------------------------------->
+        <div class="Clients_trusted_us">
+            <div class="container is-fluid">
+                <div class="title-client">
+                    <p>عملاء وثقوا بنا</p>
+                </div>
+
+                <div class="swiper-container clients auto-height">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="content-slider">
+                                <span>01</span>
+                                <img src="assets/images/clients/client1.svg" alt="clients" />
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-slider">
+                                <span>01</span>
+                                <img src="assets/images/clients/client1.svg" alt="clients" />
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-slider">
+                                <span>01</span>
+                                <img src="assets/images/clients/client1.svg" alt="clients" />
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-slider">
+                                <span>01</span>
+                                <img src="assets/images/clients/client1.svg" alt="clients" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Arrows -->
+
+                </div>
+                <!-- Swiper -->
+                <!-- <div class="swiper mySwiper clients">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                       <div class="content-slider">
+                            <span>01</span>
+                            <img src="assets/images/clients/client1.svg" alt="clients"/>
+                       </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-slider">
+                            <span>02</span>
+                            <img src="assets/images/clients/client2.svg" alt="clients"/>
+                       </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-slider">
+                            <span>03</span>
+                            <img src="assets/images/clients/client3.svg" alt="clients"/>
+                       </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-slider">
+                            <span>01</span>
+                            <img src="assets/images/clients/client1.svg" alt="clients"/>
+                       </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-slider">
+                            <span>02</span>
+                            <img src="assets/images/clients/client2.svg" alt="clients"/>
+                       </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-slider">
+                            <span>03</span>
+                            <img src="assets/images/clients/client3.svg" alt="clients"/>
+                       </div>
+                    </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <!----------------------------Our partners------------------------------------------->
+        <div class="Clients_trusted_us partners_section">
+            <div class="container is-fluid">
+                <div class="title-client">
+                    <p>شركاؤنا</p>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper-container partners auto-height">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="content-slider">
+                                <span>01</span>
+                                <img src="assets/images/clients/client1.svg" alt="clients" />
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-slider">
+                                <span>01</span>
+                                <img src="assets/images/clients/client1.svg" alt="clients" />
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-slider">
+                                <span>01</span>
+                                <img src="assets/images/clients/client1.svg" alt="clients" />
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-slider">
+                                <span>01</span>
+                                <img src="assets/images/clients/client1.svg" alt="clients" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Arrows -->
+
+                </div>
+                <!-- <div class="swiper mySwiper partners">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                       <div class="content-slider">
+                            <span>01</span>
+                            <img src="assets/images/clients/client1.svg" alt="clients"/>
+                       </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-slider">
+                            <span>02</span>
+                            <img src="assets/images/clients/client2.svg" alt="clients"/>
+                       </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-slider">
+                            <span>03</span>
+                            <img src="assets/images/clients/client3.svg" alt="clients"/>
+                       </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-slider">
+                            <span>01</span>
+                            <img src="assets/images/clients/client1.svg" alt="clients"/>
+                       </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-slider">
+                            <span>02</span>
+                            <img src="assets/images/clients/client2.svg" alt="clients"/>
+                       </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-slider">
+                            <span>03</span>
+                            <img src="assets/images/clients/client3.svg" alt="clients"/>
+                       </div>
+                    </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------>
+        <footer>
+            <div class="top-footer-part">
+                <div class="container">
+                    <div class="columns is-flex-wrap-wrap">
+                        <div class="column is-4-fullhd is-4-desktop is-4-tablet is-6-mobile is-4 col-footer">
+                            <div class="logo-part">
+                                <a href="#"><img src="assets/images/logo/footer-logo.svg" alt="image" /></a>
+                                <p>طموحنا عنان السماء</p>
+                            </div>
+                        </div>
+                        <div class="column is-4-fullhd is-4-desktop is-4-tablet is-6-mobile is-4 col-footer">
+                            <div class="list-footer">
+                                <p>الروابط المهمة</p>
+                                <ul>
+                                    <li><a href="#">الرئيسية</a></li>
+                                    <li><a href="#">اخر الأخبار</a></li>
+                                    <li><a href="#">الشهادات و الجوائز </a></li>
+                                    <li><a href="#">تواصل معنا</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column is-4-fullhd is-4-desktop is-4-tablet is-6-mobile is-4 col-footer">
+                            <div class="list-footer">
+                                <p>عن الشركة</p>
+                                <ul>
+                                    <li><a href="#">الرؤية</a></li>
+                                    <li><a href="#">فريق العمل</a></li>
+                                    <li><a href="#">الأمان</a></li>
+                                    <li><a href="#">قيمنا</a></li>
+                                    <li><a href="#">الرسالة</a></li>
+                                    <li><a href="#">الأهداف</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="line"></div>
+                    <div class="columns is-flex-wrap-wrap is-align-items-center">
+                        <div class="column is-6-fullhd is-6-desktop is-6-tablet is-12-mobile is-12 my-0">
+                            <p class="has-text-right">جميع الحقوق محفوظة لـ <span>سماء</span></p>
+                        </div>
+                        <div class="column is-6-fullhd is-6-desktop is-6-tablet is-12-mobile is-12 my-0">
+                            <p class="has-text-left">تصميم وبرمجة <span>سماء</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!--JQuery Js-->
+    <script src="assets/js/jQuery.js"></script>
+    <!--gsap-->
+    <script src="assets/js/anime.min.js"></script>
+    <!--ScrollTrigger-->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!--lenis-->
+    <script src="assets/js/lenis.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/script_lenis.js"></script>
+    <script src="assets/js/script-animation.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script>
+        /*---------------------------------------------*/
+        var swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            speed: 3800,
+	autoplay: {
+	  delay: 1000,
+	  disableOnInteraction: true,
+	},
+            loop: true,
+            spaceBetween: 0,
+            navigation: {
+                nextEl: '.swiper-button-next.one',
+                prevEl: '.swiper-button-prev.one'
+            }
+        });
+        /*---------------------------------------------*/
+        var newSwiper = new Swiper('.swiper-container.first_number_slider', {
+            loop: true,
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+
+            pagination: {
+                el: '.swiper-pagination.one',
+                type: 'fraction',
+                formatFractionCurrent: function (number) {
+                    return number;
+                }
+            },
+            navigation: {
+                nextEl: '.swiper-button-next.two',
+                prevEl: '.swiper-button-prev.two'
+            }
+        });
+        /*---------------------------------------------*/
+        var next_slider = new Swiper('.swiper-container.next-slider', {
+            loop: true,
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+
+            pagination: {
+                el: '.swiper-pagination.two',
+                type: 'fraction',
+                formatFractionCurrent: function (number) {
+                    return number;
+                }
+            },
+            navigation: {
+                nextEl: '.swiper-button-next.three',
+                prevEl: '.swiper-button-prev.three'
+            }
+        });
+        /*--------------------------------------------------*/
+        var next_slider = new Swiper('.swiper-container.third-slider', {
+            loop: true,
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+
+            pagination: {
+                el: '.swiper-pagination.three',
+                type: 'fraction',
+                formatFractionCurrent: function (number) {
+                    return number;
+                }
+            },
+            navigation: {
+                nextEl: '.swiper-button-next.four',
+                prevEl: '.swiper-button-prev.four'
+            }
+        });
+        /*------------------------------------------------------------------*/
+        /*-----------------------------------------------------*/
+        var clientSwiper = new Swiper(".swiper-container.clients", {
+            slidesPerView: 2,
+            loop: true,
+            autoplay: true,
+            spaceBetween: 70,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                1200: {
+                    slidesPerView: 3
+                },
+                500: {
+                    slidesPerView: 1.5
+                },
+                300: {
+                    slidesPerView: 1
+                },
+                700: {
+                    slidesPerView: 2
+                }
+            }
+        });
+        /*---------------------------------------------*/
+
+        var partnerSwiper = new Swiper(".swiper-container.partners", {
+            slidesPerView: 2,
+            loop: true,
+            autoplay: true,
+            spaceBetween: 70,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                1200: {
+                    slidesPerView: 3
+                },
+                500: {
+                    slidesPerView: 1.5
+                },
+                300: {
+                    slidesPerView: 1
+                },
+                700: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

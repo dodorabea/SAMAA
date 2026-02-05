@@ -1,0 +1,233 @@
+@charset "utf-8";
+@media only screen and (max-width: 1220px) 
+{
+    .content-intro-section h2 {
+        padding-left: 0;
+    }
+    .latest-news .card .card-body p
+    {
+        padding-left: 10%;
+    }
+    .main-news-text-part
+    {
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width: 1390px) 
+{
+    .single-step {
+        padding: 0 5%;
+    }
+    .box-item-text ul li img {
+        width: 53px;
+        height: 45px;
+    }
+    .box-item-text ul li p {
+        font-size: 15px;
+        padding-left: 0%;
+    }
+}
+@media only screen and (max-width: 991px) 
+{
+    .grid-item {
+        width: 100%;
+      }
+.slider-text-part .swiper-rtl .swiper-button-prev:after {
+    content: url(../images/icon/left.svg);
+    padding-left: 0;
+  }
+  .slider-text-part  .swiper-button-next:after
+  {
+    content: url(../images/icon/right.svg) !important;
+    padding-left: 3px !important;
+  }
+    .slider-text-part  .swiper-button-next, .slider-text-part .swiper-button-prev
+    {
+        position: relative;
+        display: inline-block;
+        margin: 25px 0;
+        text-align: center;
+    }
+    .slider-content
+    {
+        width: auto;
+    }
+    .wrapper
+    {
+        display: none;
+    }
+    .mobile-view
+{
+  display: block
+}
+.item-section
+{
+    margin: 25px
+}
+.card.design-fields-card-page
+{
+    padding: 25px;
+    top: 0;
+}
+.card.design-fields-card-page header h4 {
+    font-size: 2rem;
+}
+.item__inner h3
+{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  color:  #00404E;
+  font-family: 'Alexandria-Bold';
+}
+.item__inner p
+{
+  font-size: 1.125rem;
+  color: rgba(30, 30, 30, 1);
+  line-height: 2.5rem;
+  text-align: justify;
+  font-family: 'Alexandria-Regular';
+}
+}
+@media only screen and (max-width: 1170px)
+{
+    .container
+    {
+        padding: 0 25px;
+    }
+    .box-item-text ul li p {
+        font-size: 17px;
+        padding-left: 0%;
+    }
+    
+}
+@media only screen and (max-width: 1210px)
+{
+    .card.Description_Projects .card-content .content p {
+        font-size: 1rem;
+        line-height: 1.66rem;
+    }
+}
+@media only screen and (max-width: 767px)
+{
+    .Description_Projects_part
+    {
+        padding: 60px 20px;
+    }
+    .contact-form p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-left: 0%; 
+    }
+    .project_fields .section .box {
+        transform: none !important;
+    }
+    .project_fields .section
+    {
+        height: auto;
+    }
+    .scrolled-section-part
+    {
+        padding: 0;
+    }
+    .header li .btn-outline
+    {
+        display: none;
+    }
+    .content-intro-section h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    .latest-news .card .card-body p
+    {
+        padding-left: 0%;
+    }
+    .content-intro-section p
+    {
+        padding-left: 0;
+    }
+    .our_project_slider .card {
+        padding: 0 5%;
+    }
+    .our_project_slider header.card-header {
+        padding-bottom: 50px;
+    }
+    .title-section p {
+        margin-bottom: 30px;
+    }
+    .our_project_slider .swiper-container {
+        overflow: hidden;
+        margin-bottom: 35px;
+    }
+    .latest-news .card .card-body p {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .Clients_trusted_us
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .team-samaa .card img
+    {
+        height: auto;
+    }
+}
+@media only screen and (max-width: 600px)
+{
+    .project-content ul li:last-child
+    {
+        width: auto;
+    }
+    .project-card
+    {
+        margin: 0 0 100px 0 !important;
+    }
+    .project-card .project-image-content img {
+        height: 300px !important;
+    }
+}
+@media only screen and (max-width: 500px)
+{
+    .header li .btn-outline
+    {
+        display: none;
+    }
+    .bottom-footer p
+{
+  text-align: center !important;
+}
+
+}
+@media only screen and (max-width: 400px)
+{
+    .content-intro-section h2 {
+        font-size: 3.5rem;
+        line-height: 4.8rem;
+    }
+    .card.Description_Projects .card-content .content p {
+        font-size: 1.7rem;
+        line-height: 3rem;
+    }
+    .card.Description_Projects .card-content {
+        padding: 40px 0 50px 0;
+    }
+}
+@media only screen and (max-width: 300px)
+{
+    .team-samaa .card img
+    {
+      height:460px;
+    }
+    .text-with-hover p
+        {
+        font-size: 1rem;
+        line-height: 1rem;
+        }
+        .text-with-hover span{
+            display: block;
+            font-size: .876rem;
+            line-height: 1rem;
+            color:  rgba(232, 232, 232, 1);
+          }
+}
